@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Sticker Stacker</title>
+   <link rel="shortcut icon" href="images/sticke-icon.png" type="image/x-icon">
+
+   <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet">
+
+   <!-- Foglio di stile -->
+   <link rel="stylesheet" href="sticker.css">
+</head>
+
+<body>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <nav>
+            <a href="index.html" title="">
+               <img src="/images/Logo.svg" alt="" width="100">
+            </a>
+
+            <ul class="menu">
+               <li class="current-menu-item"><a href="index.html">Home</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <!-- Fine Header -->
+
+   <div class="game-container">
+
+      <!-- Panello informazioni di gioco -->
+      <div class="game-pannel">
+         <h1>Sticker Stacker</h1>
+
+         <!-- Puntegguio -->
+         <div class="score">
+            <span class="score-label">SCORE</span>
+            <span class="score-counter">00000</span>
+         </div>
+      </div>
+
+      <!-- Tabellone di gioco -->
+      <div class="game-board">
+         <div class="grid"></div>
+
+         <!-- Schermatadi fine gioco  -->
+         <div class="end-game-screen hidden">
+            <h2 class="end-game-text">Game<br>Over</h2>
+            <button class="button play-again">Gioca ancora</button>
+         </div>
+      </div>
+
+      <!-- Pulsante di stack -->
+      <button class="button button-full stack">Stack</button>
+   </div>
+
+   <script src="sticker.js"></script>
+
+</body>
+
+</html>

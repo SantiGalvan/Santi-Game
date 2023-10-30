@@ -1,0 +1,223 @@
+/*
+COLOR PALETTE
+  black: rgb(0, 23, 50); #001732;
+  orange: rgb(241, 117, 78); #f1754e;
+  lightgreen: rgb(78, 241, 187); #4ef1bb;
+  bg-color: rgb(216, 238, 232);  #d8eee8;
+  bg-dark-color: rgb(203, 224, 221); #cbe0dd;
+  clicked-cell: rgb(157, 197, 199); #9dc5c7;
+*/
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ! Header */
+header {
+    width: 100%;
+    padding: 20px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    width: 0 auto;
+    z-index: 0;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #39f;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background: #08d058;
+        height: 100vh;
+        padding-top: 80px;
+    }
+
+    .menu li {
+        display: flex;
+    }
+
+    .menu li a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+
+    .hamburger span {
+        background: #fff;
+        height: 3px;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* Regole generiche */
+body {
+    padding: 16px;
+    line-height: 1;
+    color: rgb(0, 23, 50);
+    background-image: url('images/shibabg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.game-container {
+    padding-top: 120px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Panello di gioco */
+h1 {
+    font-size: 40px;
+}
+
+.score {
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* Tabellone di gioco */
+.game-board {
+    position: relative;
+    border: 2px solid rgb(0, 23, 50);
+    box-shadow: 0px 0px 52px 15px rgba(253, 132, 3, 0.696);
+}
+
+.grid {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cell {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(91, 189, 174, .4);
+    cursor: pointer;
+}
+
+.cell-dark {
+    background-color: rgb(91, 189, 174);
+}
+
+.cell:hover,
+.cell-clicked {
+    background-color: rgb(157, 197, 199);
+    background-image: url(images/shiba-hover.png);
+    background-size: contain;
+}
+
+.cell-treasure {
+    background-color: rgb(241, 117, 78, 0.0);
+    background-image: url('images/treasure.png');
+    background-size: contain;
+}
+
+.cell-bomb {
+    background-color: rgb(241, 117, 78);
+    background-image: url('images/shiba-bomb.png');
+    background-size: contain;
+}
+
+.cell-clicked,
+.cell-bomb {
+    cursor: not-allowed;
+}
+
+/* Schermata di fine gioco */
+.end-game-screen {
+    background-color: rgba(241, 117, 78, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.win {
+    background-color: rgba(78, 241, 187, 0.6);
+}
+
+.end-game-text {
+    font-size: 48px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+button {
+    border: 2px solid rgb(0, 23, 50);
+    font-size: 24px;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-transform: uppercase;
+    padding: 4px 20px 8px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(203, 224, 221);
+}
+
+.hidden {
+    display: none;
+}

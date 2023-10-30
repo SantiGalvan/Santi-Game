@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santi Game</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+        integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Inter:wght@300;400;700;900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#hero" title="">
+                <img src="/images/Logo.svg" alt="" width="100">
+            </a>
+
+            <ul class="menu">
+                <li><a href="#hero" class="underline">Home</a></li>
+                <li><a href="#campominato">Shiba Minato</a></li>
+                <li><a href="#sticker">Sticker Stacker</a></li>
+                <li><a href="#ducker">Ducker</a></li>
+                <li><a href="#myprofile">Santiago</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Fine Header -->
+
+
+    <!-- Hero -->
+    <div class="hero" id="hero">
+        <div class="hero__content reveal">
+            <h1 class="big-text">Santi Game 🎮</h1>
+            <p class="intro-text">Ciao 👋🏻</p>
+            <p>Mi presento, sono Santi un inesperto programmatore di 28 anni. <br>
+                In questa pagina potrete provare i miei progetti, buon divertimento.
+            </p>
+            <a href="#myprofile" class="button">Discover More</a>
+        </div>
+        <video autoplay muted loop id="video-back">
+            <source src="/video/video-back.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Fine Hero -->
+
+
+    <!-- Shiba Minato -->
+    <div class="campominato mt-3" id="campominato">
+        <div class="campominato__img reveal">
+            <img src="/images/Shibabgi.png" alt="">
+        </div>
+        <div class="campominato__content reveal">
+            <h3>Shiba Minato 💣</h3>
+            <h4 class="med-text">Primo progetto</h4>
+            <p>Versione a tema Shiba Inu del famosissimo Campo Minato. Attenzione a gli Shiba in lacrime... <br> Chissa
+                se riuscirete a trovare lo Shiba gioioso... Beh provateci.</p>
+            <a href="campominato.html" class="button">Play</a>
+        </div>
+    </div>
+    <!-- Fine Shiba Minato -->
+
+
+    <!-- Sticker -->
+    <div class="campominato mt-3 sticker" id="sticker">
+        <div class="campominato__content reveal">
+            <h3 class="big-text">Sticker Stacker</h3>
+            <h4 class="med-text">Secondo progetto</h4>
+            <p>Impila più mattoncini possibili</p>
+            <a href="sticker.html" class="button">Play</a>
+        </div>
+        <div class="campominato__img reveal">
+            <img src="/images/sticker.png" alt="">
+        </div>
+    </div>
+    <!-- Fine Sticker -->
+
+
+    <!-- Ducker -->
+    <div class="campominato mt-3" id="ducker">
+        <div class="campominato__img reveal">
+            <img src="/images/duckerbgindex.png" alt="">
+        </div>
+        <div class="campominato__content reveal">
+            <h3>Ducker</h3>
+            <h4 class="med-text">Terzo progetto</h4>
+            <p>Riuscirai a guidare la paperella dall'altra parte del tabellone? Provaci, ma ricordati che avrai solo 15
+                secondi di tempo.</p>
+            <a href="ducker.html" class="button">Play</a>
+        </div>
+    </div>
+    <!-- Fine Ducker -->
+
+    <!-- My profile -->
+    <div class="campominato mt-3" id="myprofile">
+        <div class="campominato__content reveal">
+            <h3 class="big-text">My profile</h3>
+            <h4 class="med-text">Santiago</h4>
+            <p>Ciao, sono Santiago, un ragazzo di 28 anni con la passione per la programmazione. <br> Me la cavo
+                bene con HTML e CSS, mentre per quanto riguarda JavaScript sono ancora un po' indietro. <br> Vorrei
+                imparare a programmare così da poter migliorare il mio sito web e i giochi al suo interno.</p>
+        </div>
+        <div class="campominato__img reveal">
+            <img src="/images/myprofile.jpg" alt="">
+        </div>
+    </div>
+    <!-- Fine My profile -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="grid">
+            <div class="col reveal">
+                <h4 class="normal-text tw">Contatti</h4>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt=""
+                        width="50"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt=""
+                        width="50"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.png" alt=""
+                        width="50"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="" width="50"></a>
+            </div>
+            <div class="col reveal">
+                <h4 class="normal-text tw">Scrivimi a:</h4>
+                <p><a href="mailto:@gmail" class="tw">santiago@gmail.com</a></p>
+            </div>
+            <div class="col reveal">
+                <h4 class="normal-text tw">Ringraziamenti</h4>
+                <p class="tw">Grazie alla Coding Week di Boolean, che mi ha dato la possibilita di creare questi tre
+                    giochi che in
+                    questa pagina vi propongo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fine Footer -->
+
+
+
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+        integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            /* Open Panel */
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            });
+        });
+
+        ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+        ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65, mobile: false });
+
+        let items = document.querySelectorAll('.menu a');
+        items.forEach((item) => {
+            item.addEventListener("click", function () {
+
+
+                items.forEach((item) => {
+                    item.classList.remove('underline');;
+
+                });
+                item.classList.add('underline');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Fonti -->
+<!-- https://scrollrevealjs.org/api/scale.html
+Sito per scaricare lo scroll
+https://flickity.metafizzy.co/
+Sito per scaricare il carosello
+https://www.pexels.com/it-it/video/mani-amici-vintage-giocando-4835516/
+Sito per scaricare video alta qualità
+https://unsplash.com/it
+Sito per scaricare immagini alta qualità
+https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+Sito per scaricare la sfocatura dei background -->

@@ -1,0 +1,14 @@
+ctrl + C = copia
+ctrl + V = incolla
+ctrl + D = multiselettore
+esc = uscire dal multiselettore
+ctrl + B = modalita focus
+ctrl + X = taglia
+ctrl + Z = torna indietro
+ctrl + Y = torna avanti
+ctrl + F = ricerca su questo foglio di lavoro
+ctrl + S = salvare
+ctrl + tab = spostamento tra le tab 
+ctrl + W = chiudere tab
+ctrl + ù = commento 
+shift + altgr + [] = {}
